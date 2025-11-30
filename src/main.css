@@ -284,272 +284,146 @@ body {
         border: none;
     }
 
-    .homeWrapper__0920e /* nitro page group inner */,
+    .homeWrapper__0920e,
     [class*="homeWrapper_"] {
         border: none;
         background: none;
     }
-    .applicationStore_f07d62 /* nitro page group outer */,
+    .applicationStore_f07d62,
     [class*="applicationStore_"] {
         background: none;
     }
 
-    /* ═══════════════════════════════════════════════════════════════
-       NITRO PAGE - Lillac themed styling
-       Uses attribute selectors [class*="name"] to match dynamic Discord classes
-       ═══════════════════════════════════════════════════════════════ */
-    /* Nitro page container */
+    /* nitro page */
     [class*="applicationStore_"],
-    [class*="premiumTab_"],
-    [class*="contentWrapper_"][class*="nitro"] {
-        background: linear-gradient(180deg,
-            var(--bg-4) 0%,
-            hsla(280, 12%, 6%, 1) 100%) !important;
+    [class*="premiumTab_"] {
+        background: linear-gradient(180deg, var(--bg-4), hsla(280, 12%, 6%, 1)) !important;
     }
     
-    /* Nitro hero/marketing sections */
     [class*="heroContainer_"],
-    [class*="hero_"][class*="nitro"],
     [class*="marketingHeader_"],
-    [class*="nitroHeader_"],
     [class*="ctaBackground_"] {
-        background: linear-gradient(135deg,
-            hsla(280, 40%, 25%, 0.4) 0%,
-            hsla(280, 50%, 15%, 0.3) 50%,
-            hsla(280, 30%, 10%, 0.2) 100%) !important;
+        background: linear-gradient(135deg, hsla(280, 40%, 25%, 0.4), hsla(280, 30%, 10%, 0.2)) !important;
         border-radius: var(--radius-lg);
         border: 1px solid hsla(280, 40%, 50%, 0.15);
     }
     
-    /* Nitro tier cards */
     [class*="tierCard_"],
-    [class*="tierBody_"],
     [class*="subscriptionCard_"],
     [class*="planCard_"] {
         background: var(--bg-3) !important;
         border: 1px solid var(--border-subtle) !important;
         border-radius: var(--radius-lg) !important;
-        transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.2s ease;
+        transition: border-color 0.15s, transform 0.15s;
     }
     [class*="tierCard_"]:hover,
     [class*="subscriptionCard_"]:hover,
     [class*="planCard_"]:hover {
         border-color: hsla(280, 40%, 55%, 0.3) !important;
         transform: translateY(-2px);
-        box-shadow: 0 8px 24px hsla(280, 50%, 30%, 0.2);
     }
     
-    /* Nitro perks */
     [class*="perkCard_"],
     [class*="perkRow_"],
-    [class*="featureCard_"],
-    [class*="perk_"]:not([class*="perkIcon"]) {
+    [class*="featureCard_"] {
         background: hsla(280, 20%, 15%, 0.3) !important;
         border-radius: var(--radius-md);
         margin: 4px 0;
-        transition: background-color 0.15s ease;
-    }
-    [class*="perkCard_"]:hover,
-    [class*="perkRow_"]:hover,
-    [class*="featureCard_"]:hover {
-        background: hsla(280, 25%, 20%, 0.4) !important;
     }
     
-    /* Nitro buttons */
     [class*="subscribeButton_"],
     [class*="purchaseButton_"],
-    [class*="tierBody_"] button,
     [class*="upsellButton_"] {
         background: linear-gradient(135deg, var(--purple-3), var(--purple-4)) !important;
         border: none !important;
         border-radius: var(--radius-md) !important;
-        transition: filter 0.15s ease, transform 0.1s ease;
-    }
-    [class*="subscribeButton_"]:hover,
-    [class*="purchaseButton_"]:hover,
-    [class*="upsellButton_"]:hover {
-        filter: brightness(1.1);
-        transform: translateY(-1px);
     }
 
-    /* ═══════════════════════════════════════════════════════════════
-       SHOP PAGE - Lillac themed styling  
-       ═══════════════════════════════════════════════════════════════ */
+    /* shop */
     [class*="shop_"]:not([class*="shopIcon"]),
     [class*="collectiblesShop_"],
     [class*="storePage_"] {
         overflow: hidden;
-        height: auto;
-        background: linear-gradient(180deg,
-            var(--bg-4) 0%,
-            hsla(280, 12%, 6%, 1) 100%) !important;
+        background: linear-gradient(180deg, var(--bg-4), hsla(280, 12%, 6%, 1)) !important;
     }
     
-    /* Shop categories/tabs */
     [class*="categoryItem_"],
-    [class*="tabItem_"],
     [class*="shopTab_"] {
         background: var(--bg-3) !important;
         border: 1px solid var(--border-subtle) !important;
         border-radius: var(--radius-md) !important;
-        transition: border-color 0.15s ease, background-color 0.15s ease;
     }
     [class*="categoryItem_"]:hover,
-    [class*="tabItem_"]:hover,
     [class*="shopTab_"]:hover {
         border-color: hsla(280, 40%, 55%, 0.3) !important;
         background: var(--bg-2) !important;
     }
     [class*="categoryItem_"][class*="selected"],
-    [class*="tabItem_"][class*="selected"],
     [class*="shopTab_"][class*="active"] {
         border-color: var(--purple-3) !important;
         background: hsla(280, 30%, 20%, 0.4) !important;
     }
     
-    /* Shop product cards */
     [class*="collectibleCard_"],
     [class*="productCard_"],
-    [class*="itemCard_"],
-    [class*="giftCard_"] {
+    [class*="itemCard_"] {
         background: var(--bg-3) !important;
         border: 1px solid var(--border-subtle) !important;
         border-radius: var(--radius-lg) !important;
-        transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-        overflow: hidden;
+        transition: border-color 0.2s, transform 0.2s;
     }
     [class*="collectibleCard_"]:hover,
     [class*="productCard_"]:hover,
-    [class*="itemCard_"]:hover,
-    [class*="giftCard_"]:hover {
+    [class*="itemCard_"]:hover {
         border-color: hsla(280, 40%, 55%, 0.35) !important;
-        transform: translateY(-4px);
-        box-shadow: 0 12px 32px hsla(280, 50%, 20%, 0.25);
+        transform: translateY(-3px);
     }
     
-    /* Shop item previews */
-    [class*="previewContainer_"],
-    [class*="itemPreview_"],
-    [class*="collectiblePreview_"] {
-        background: hsla(280, 15%, 12%, 0.5) !important;
-        border-radius: var(--radius-md);
-    }
-    
-    /* Shop price tags */
-    [class*="priceTag_"],
-    [class*="price_"]:not([class*="priceD"]),
-    [class*="itemPrice_"] {
-        background: linear-gradient(135deg, var(--purple-4), var(--purple-5)) !important;
-        border-radius: var(--radius-sm);
-        padding: 4px 10px;
-    }
-    
-    /* Shop bundles */
-    [class*="bundleCard_"],
-    [class*="bundle_"]:not([class*="bundleIcon"]) {
-        background: linear-gradient(135deg,
-            hsla(280, 35%, 18%, 0.6) 0%,
-            hsla(280, 25%, 12%, 0.4) 100%) !important;
+    [class*="bundleCard_"] {
+        background: linear-gradient(135deg, hsla(280, 35%, 18%, 0.6), hsla(280, 25%, 12%, 0.4)) !important;
         border: 1px solid hsla(280, 40%, 45%, 0.25) !important;
         border-radius: var(--radius-lg) !important;
     }
-    [class*="bundleCard_"]:hover,
-    [class*="bundle_"]:not([class*="bundleIcon"]):hover {
-        border-color: hsla(280, 50%, 55%, 0.4) !important;
-    }
 
-    /* ═══════════════════════════════════════════════════════════════
-       QUESTS/MISSIONS PAGE - Lillac themed styling
-       ═══════════════════════════════════════════════════════════════ */
-    /* Quests container */
+    /* quests */
     [class*="questsContainer_"],
-    [class*="questsPage_"],
-    [class*="questsScroller_"] {
-        background: linear-gradient(180deg,
-            var(--bg-4) 0%,
-            hsla(280, 12%, 6%, 1) 100%) !important;
+    [class*="questsPage_"] {
+        background: linear-gradient(180deg, var(--bg-4), hsla(280, 12%, 6%, 1)) !important;
     }
     
-    /* Quest cards */
-    [class*="questCard_"],
-    [class*="quest_"]:not([class*="questIcon"]):not([class*="questsC"]):not([class*="questsP"]):not([class*="questsS"]) {
+    [class*="questCard_"] {
         background: var(--bg-3) !important;
         border: 1px solid var(--border-subtle) !important;
         border-radius: var(--radius-lg) !important;
-        transition: border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
-        overflow: hidden;
+        transition: border-color 0.2s, transform 0.15s;
     }
-    [class*="questCard_"]:hover,
-    [class*="quest_"]:not([class*="questIcon"]):not([class*="questsC"]):not([class*="questsP"]):not([class*="questsS"]):hover {
+    [class*="questCard_"]:hover {
         border-color: hsla(280, 40%, 55%, 0.3) !important;
         transform: translateY(-2px);
-        box-shadow: 0 8px 24px hsla(280, 50%, 20%, 0.2);
     }
     
-    /* Quest progress bar */
-    [class*="progressBar_"],
-    [class*="questProgress_"] {
+    [class*="progressBar_"] {
         background: var(--bg-2) !important;
         border-radius: 8px !important;
-        overflow: hidden;
     }
     [class*="progressBarFill_"],
-    [class*="progressFill_"],
     [class*="barFill_"] {
         background: linear-gradient(90deg, var(--purple-3), var(--purple-2)) !important;
         border-radius: 8px !important;
     }
     
-    /* Quest rewards */
     [class*="reward_"]:not([class*="rewardIcon"]),
-    [class*="rewardItem_"],
-    [class*="questReward_"] {
+    [class*="rewardItem_"] {
         background: hsla(280, 25%, 18%, 0.4) !important;
         border: 1px solid hsla(280, 35%, 45%, 0.2) !important;
         border-radius: var(--radius-md) !important;
-        transition: border-color 0.15s ease, background-color 0.15s ease;
-    }
-    [class*="reward_"]:not([class*="rewardIcon"]):hover,
-    [class*="rewardItem_"]:hover,
-    [class*="questReward_"]:hover {
-        border-color: hsla(280, 45%, 55%, 0.35) !important;
-        background: hsla(280, 30%, 22%, 0.5) !important;
     }
     
-    /* Quest claim/action buttons */
     [class*="claimButton_"],
-    [class*="questButton_"],
-    [class*="acceptButton_"] {
+    [class*="questButton_"] {
         background: linear-gradient(135deg, var(--purple-3), var(--purple-4)) !important;
         border: none !important;
         border-radius: var(--radius-md) !important;
-        transition: filter 0.15s ease, transform 0.1s ease;
-    }
-    [class*="claimButton_"]:hover,
-    [class*="questButton_"]:hover,
-    [class*="acceptButton_"]:hover {
-        filter: brightness(1.15);
-        transform: translateY(-1px);
-    }
-    
-    /* Quest game icon */
-    [class*="gameIcon_"],
-    [class*="questIcon_"] {
-        border-radius: var(--radius-md);
-        border: 2px solid hsla(280, 40%, 50%, 0.2);
-        transition: border-color 0.15s ease;
-    }
-    [class*="questCard_"]:hover [class*="gameIcon_"],
-    [class*="questCard_"]:hover [class*="questIcon_"] {
-        border-color: hsla(280, 50%, 60%, 0.4);
-    }
-    
-    /* Quest timer/expiry */
-    [class*="timer_"],
-    [class*="expiresAt_"],
-    [class*="questExpiry_"] {
-        color: var(--purple-2) !important;
-        font-weight: 500;
     }
 
     .content_f75fb0 > aside > .outer_c0bea0 /* dm user panel */ {

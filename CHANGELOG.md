@@ -1,29 +1,56 @@
-# Midnight Lillac - Changelog
+# Changelog# Midnight Lillac - Changelog
 
-## Version 3.0.7 - Latest Release 🌙
 
-A sleek, dark Discord theme with beautiful lillac/purple accents, grey backgrounds, and sophisticated animations.
 
----
+## 3.0.7## Version 3.0.7 - Latest Release 🌙
 
-### ✨ Features
+- trying to style nitro/shop/quests pages
 
-#### 🎨 Color Scheme
-- **Lillac/Purple accents** (hue 280-290) throughout the UI
-- **Grey backgrounds** with subtle purple undertones
+- using attribute selectors for discord class changesA sleek, dark Discord theme with beautiful lillac/purple accents, grey backgrounds, and sophisticated animations.
+
+
+
+## 3.0.6---
+
+- animation overhaul
+
+- custom easing curves### ✨ Features
+
+
+
+## 3.0.5#### 🎨 Color Scheme
+
+- user panel tweaks- **Lillac/Purple accents** (hue 280-290) throughout the UI
+
+- server icon glow- **Grey backgrounds** with subtle purple undertones
+
 - **No blue anywhere** - completely purple-themed
-- OKLCH color palette for vibrant, consistent colors
 
-#### 🌟 Animations System (v3.0.6+)
+## 3.0.4- OKLCH color palette for vibrant, consistent colors
+
+- moon button easter egg
+
+- left bar enhancements#### 🌟 Animations System (v3.0.6+)
+
 - **Custom easing functions**: ease-out-expo, ease-out-back, ease-in-out-circ, ease-spring
-- **Modal animations**: Smooth scale + fade entrances
-- **Menu animations**: Pop-in effects with subtle bounce
-- **Tooltip animations**: Quick, snappy appearances
+
+## 3.0.3- **Modal animations**: Smooth scale + fade entrances
+
+- alignment fixes- **Menu animations**: Pop-in effects with subtle bounce
+
+- removed problematic transforms- **Tooltip animations**: Quick, snappy appearances
+
 - **Message animations**: Gentle slide-in from left
-- **Reaction animations**: Satisfying pop effect when adding
-- **Notification badges**: Subtle pulse animation
-- **Settings panel**: Smooth slide transitions
-- **Image viewer**: Elegant zoom-in effect
+
+## 3.0.0- **Reaction animations**: Satisfying pop effect when adding
+
+- initial lillac fork- **Notification badges**: Subtle pulse animation
+
+- purple color scheme- **Settings panel**: Smooth slide transitions
+
+- grey backgrounds- **Image viewer**: Elegant zoom-in effect
+
+- separated chatbar
 
 #### 🖥️ UI Components
 

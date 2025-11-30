@@ -1,16 +1,14 @@
 /**
  * @name Midnight Lillac
- * @description A sleek dark theme with lillac/purple accents, sophisticated animations, and styled Nitro/Shop/Quests pages.
- * @author refact0r (Base) + Cerbi (Animations, lillac refinement)
+ * @description Dark theme with lillac accents and custom animations
+ * @author refact0r, Cerbi
  * @version 3.0.7
  * @invite nz87hXyvcy
  * @website https://github.com/refact0r/midnight-discord
- * @source https://github.com/refact0r/midnight-discord/blob/master/midnight-lillac/build/midnight.css
+ * @source https://github.com/refact0r/midnight-discord
  * @authorId 508863359777505290
- * @authorLink https://www.refact0r.dev
 */
 
-/* main.css */
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
@@ -297,272 +295,146 @@ body {
         border: none;
     }
 
-    .homeWrapper__0920e /* nitro page group inner */,
+    .homeWrapper__0920e,
     [class*="homeWrapper_"] {
         border: none;
         background: none;
     }
-    .applicationStore_f07d62 /* nitro page group outer */,
+    .applicationStore_f07d62,
     [class*="applicationStore_"] {
         background: none;
     }
 
-    /* ═══════════════════════════════════════════════════════════════
-       NITRO PAGE - Lillac themed styling
-       Uses attribute selectors [class*="name"] to match dynamic Discord classes
-       ═══════════════════════════════════════════════════════════════ */
-    /* Nitro page container */
+    /* nitro page */
     [class*="applicationStore_"],
-    [class*="premiumTab_"],
-    [class*="contentWrapper_"][class*="nitro"] {
-        background: linear-gradient(180deg,
-            var(--bg-4) 0%,
-            hsla(280, 12%, 6%, 1) 100%) !important;
+    [class*="premiumTab_"] {
+        background: linear-gradient(180deg, var(--bg-4), hsla(280, 12%, 6%, 1)) !important;
     }
     
-    /* Nitro hero/marketing sections */
     [class*="heroContainer_"],
-    [class*="hero_"][class*="nitro"],
     [class*="marketingHeader_"],
-    [class*="nitroHeader_"],
     [class*="ctaBackground_"] {
-        background: linear-gradient(135deg,
-            hsla(280, 40%, 25%, 0.4) 0%,
-            hsla(280, 50%, 15%, 0.3) 50%,
-            hsla(280, 30%, 10%, 0.2) 100%) !important;
+        background: linear-gradient(135deg, hsla(280, 40%, 25%, 0.4), hsla(280, 30%, 10%, 0.2)) !important;
         border-radius: var(--radius-lg);
         border: 1px solid hsla(280, 40%, 50%, 0.15);
     }
     
-    /* Nitro tier cards */
     [class*="tierCard_"],
-    [class*="tierBody_"],
     [class*="subscriptionCard_"],
     [class*="planCard_"] {
         background: var(--bg-3) !important;
         border: 1px solid var(--border-subtle) !important;
         border-radius: var(--radius-lg) !important;
-        transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.2s ease;
+        transition: border-color 0.15s, transform 0.15s;
     }
     [class*="tierCard_"]:hover,
     [class*="subscriptionCard_"]:hover,
     [class*="planCard_"]:hover {
         border-color: hsla(280, 40%, 55%, 0.3) !important;
         transform: translateY(-2px);
-        box-shadow: 0 8px 24px hsla(280, 50%, 30%, 0.2);
     }
     
-    /* Nitro perks */
     [class*="perkCard_"],
     [class*="perkRow_"],
-    [class*="featureCard_"],
-    [class*="perk_"]:not([class*="perkIcon"]) {
+    [class*="featureCard_"] {
         background: hsla(280, 20%, 15%, 0.3) !important;
         border-radius: var(--radius-md);
         margin: 4px 0;
-        transition: background-color 0.15s ease;
-    }
-    [class*="perkCard_"]:hover,
-    [class*="perkRow_"]:hover,
-    [class*="featureCard_"]:hover {
-        background: hsla(280, 25%, 20%, 0.4) !important;
     }
     
-    /* Nitro buttons */
     [class*="subscribeButton_"],
     [class*="purchaseButton_"],
-    [class*="tierBody_"] button,
     [class*="upsellButton_"] {
         background: linear-gradient(135deg, var(--purple-3), var(--purple-4)) !important;
         border: none !important;
         border-radius: var(--radius-md) !important;
-        transition: filter 0.15s ease, transform 0.1s ease;
-    }
-    [class*="subscribeButton_"]:hover,
-    [class*="purchaseButton_"]:hover,
-    [class*="upsellButton_"]:hover {
-        filter: brightness(1.1);
-        transform: translateY(-1px);
     }
 
-    /* ═══════════════════════════════════════════════════════════════
-       SHOP PAGE - Lillac themed styling  
-       ═══════════════════════════════════════════════════════════════ */
+    /* shop */
     [class*="shop_"]:not([class*="shopIcon"]),
     [class*="collectiblesShop_"],
     [class*="storePage_"] {
         overflow: hidden;
-        height: auto;
-        background: linear-gradient(180deg,
-            var(--bg-4) 0%,
-            hsla(280, 12%, 6%, 1) 100%) !important;
+        background: linear-gradient(180deg, var(--bg-4), hsla(280, 12%, 6%, 1)) !important;
     }
     
-    /* Shop categories/tabs */
     [class*="categoryItem_"],
-    [class*="tabItem_"],
     [class*="shopTab_"] {
         background: var(--bg-3) !important;
         border: 1px solid var(--border-subtle) !important;
         border-radius: var(--radius-md) !important;
-        transition: border-color 0.15s ease, background-color 0.15s ease;
     }
     [class*="categoryItem_"]:hover,
-    [class*="tabItem_"]:hover,
     [class*="shopTab_"]:hover {
         border-color: hsla(280, 40%, 55%, 0.3) !important;
         background: var(--bg-2) !important;
     }
     [class*="categoryItem_"][class*="selected"],
-    [class*="tabItem_"][class*="selected"],
     [class*="shopTab_"][class*="active"] {
         border-color: var(--purple-3) !important;
         background: hsla(280, 30%, 20%, 0.4) !important;
     }
     
-    /* Shop product cards */
     [class*="collectibleCard_"],
     [class*="productCard_"],
-    [class*="itemCard_"],
-    [class*="giftCard_"] {
+    [class*="itemCard_"] {
         background: var(--bg-3) !important;
         border: 1px solid var(--border-subtle) !important;
         border-radius: var(--radius-lg) !important;
-        transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-        overflow: hidden;
+        transition: border-color 0.2s, transform 0.2s;
     }
     [class*="collectibleCard_"]:hover,
     [class*="productCard_"]:hover,
-    [class*="itemCard_"]:hover,
-    [class*="giftCard_"]:hover {
+    [class*="itemCard_"]:hover {
         border-color: hsla(280, 40%, 55%, 0.35) !important;
-        transform: translateY(-4px);
-        box-shadow: 0 12px 32px hsla(280, 50%, 20%, 0.25);
+        transform: translateY(-3px);
     }
     
-    /* Shop item previews */
-    [class*="previewContainer_"],
-    [class*="itemPreview_"],
-    [class*="collectiblePreview_"] {
-        background: hsla(280, 15%, 12%, 0.5) !important;
-        border-radius: var(--radius-md);
-    }
-    
-    /* Shop price tags */
-    [class*="priceTag_"],
-    [class*="price_"]:not([class*="priceD"]),
-    [class*="itemPrice_"] {
-        background: linear-gradient(135deg, var(--purple-4), var(--purple-5)) !important;
-        border-radius: var(--radius-sm);
-        padding: 4px 10px;
-    }
-    
-    /* Shop bundles */
-    [class*="bundleCard_"],
-    [class*="bundle_"]:not([class*="bundleIcon"]) {
-        background: linear-gradient(135deg,
-            hsla(280, 35%, 18%, 0.6) 0%,
-            hsla(280, 25%, 12%, 0.4) 100%) !important;
+    [class*="bundleCard_"] {
+        background: linear-gradient(135deg, hsla(280, 35%, 18%, 0.6), hsla(280, 25%, 12%, 0.4)) !important;
         border: 1px solid hsla(280, 40%, 45%, 0.25) !important;
         border-radius: var(--radius-lg) !important;
     }
-    [class*="bundleCard_"]:hover,
-    [class*="bundle_"]:not([class*="bundleIcon"]):hover {
-        border-color: hsla(280, 50%, 55%, 0.4) !important;
-    }
 
-    /* ═══════════════════════════════════════════════════════════════
-       QUESTS/MISSIONS PAGE - Lillac themed styling
-       ═══════════════════════════════════════════════════════════════ */
-    /* Quests container */
+    /* quests */
     [class*="questsContainer_"],
-    [class*="questsPage_"],
-    [class*="questsScroller_"] {
-        background: linear-gradient(180deg,
-            var(--bg-4) 0%,
-            hsla(280, 12%, 6%, 1) 100%) !important;
+    [class*="questsPage_"] {
+        background: linear-gradient(180deg, var(--bg-4), hsla(280, 12%, 6%, 1)) !important;
     }
     
-    /* Quest cards */
-    [class*="questCard_"],
-    [class*="quest_"]:not([class*="questIcon"]):not([class*="questsC"]):not([class*="questsP"]):not([class*="questsS"]) {
+    [class*="questCard_"] {
         background: var(--bg-3) !important;
         border: 1px solid var(--border-subtle) !important;
         border-radius: var(--radius-lg) !important;
-        transition: border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
-        overflow: hidden;
+        transition: border-color 0.2s, transform 0.15s;
     }
-    [class*="questCard_"]:hover,
-    [class*="quest_"]:not([class*="questIcon"]):not([class*="questsC"]):not([class*="questsP"]):not([class*="questsS"]):hover {
+    [class*="questCard_"]:hover {
         border-color: hsla(280, 40%, 55%, 0.3) !important;
         transform: translateY(-2px);
-        box-shadow: 0 8px 24px hsla(280, 50%, 20%, 0.2);
     }
     
-    /* Quest progress bar */
-    [class*="progressBar_"],
-    [class*="questProgress_"] {
+    [class*="progressBar_"] {
         background: var(--bg-2) !important;
         border-radius: 8px !important;
-        overflow: hidden;
     }
     [class*="progressBarFill_"],
-    [class*="progressFill_"],
     [class*="barFill_"] {
         background: linear-gradient(90deg, var(--purple-3), var(--purple-2)) !important;
         border-radius: 8px !important;
     }
     
-    /* Quest rewards */
     [class*="reward_"]:not([class*="rewardIcon"]),
-    [class*="rewardItem_"],
-    [class*="questReward_"] {
+    [class*="rewardItem_"] {
         background: hsla(280, 25%, 18%, 0.4) !important;
         border: 1px solid hsla(280, 35%, 45%, 0.2) !important;
         border-radius: var(--radius-md) !important;
-        transition: border-color 0.15s ease, background-color 0.15s ease;
-    }
-    [class*="reward_"]:not([class*="rewardIcon"]):hover,
-    [class*="rewardItem_"]:hover,
-    [class*="questReward_"]:hover {
-        border-color: hsla(280, 45%, 55%, 0.35) !important;
-        background: hsla(280, 30%, 22%, 0.5) !important;
     }
     
-    /* Quest claim/action buttons */
     [class*="claimButton_"],
-    [class*="questButton_"],
-    [class*="acceptButton_"] {
+    [class*="questButton_"] {
         background: linear-gradient(135deg, var(--purple-3), var(--purple-4)) !important;
         border: none !important;
         border-radius: var(--radius-md) !important;
-        transition: filter 0.15s ease, transform 0.1s ease;
-    }
-    [class*="claimButton_"]:hover,
-    [class*="questButton_"]:hover,
-    [class*="acceptButton_"]:hover {
-        filter: brightness(1.15);
-        transform: translateY(-1px);
-    }
-    
-    /* Quest game icon */
-    [class*="gameIcon_"],
-    [class*="questIcon_"] {
-        border-radius: var(--radius-md);
-        border: 2px solid hsla(280, 40%, 50%, 0.2);
-        transition: border-color 0.15s ease;
-    }
-    [class*="questCard_"]:hover [class*="gameIcon_"],
-    [class*="questCard_"]:hover [class*="questIcon_"] {
-        border-color: hsla(280, 50%, 60%, 0.4);
-    }
-    
-    /* Quest timer/expiry */
-    [class*="timer_"],
-    [class*="expiresAt_"],
-    [class*="questExpiry_"] {
-        color: var(--purple-2) !important;
-        font-weight: 500;
     }
 
     .content_f75fb0 > aside > .outer_c0bea0 /* dm user panel */ {
@@ -813,18 +685,16 @@ body {
     display: none;
 }
 
-/* animations.css */
 body {
     --list-item-transition: 0.15s ease;
     --dms-icon-svg-transition: 0.25s ease;
     
-    /* Animation timing functions - sophisticated easing */
+    /* easing curves */
     --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
     --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
     --ease-in-out-circ: cubic-bezier(0.85, 0, 0.15, 1);
     --ease-spring: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     
-    /* Animation durations */
     --anim-fast: 0.15s;
     --anim-normal: 0.25s;
     --anim-slow: 0.4s;
@@ -836,15 +706,9 @@ body {
     initial-value: on;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════════
-   OVERRIDE DISCORD ANIMATIONS - Sophisticated yet Lightweight
-   ═══════════════════════════════════════════════════════════════════════════ */
-
 @container body style(--animations: on) {
     
-    /* ═══════════════════════════════════════════════════════════════
-       MODALS - Elegant Scale + Fade with Backdrop
-       ═══════════════════════════════════════════════════════════════ */
+    /* modals */
     .layerContainer__960e4 {
         animation: backdrop-fade var(--anim-normal) var(--ease-out-expo) forwards;
     }
@@ -880,9 +744,7 @@ body {
         to { opacity: 1; }
     }
     
-    /* ═══════════════════════════════════════════════════════════════
-       CONTEXT MENUS - Smooth Origin-based Appear
-       ═══════════════════════════════════════════════════════════════ */
+    /* context menus */
     [class*="menu_"],
     .menu__088f7 {
         animation: menu-pop var(--anim-fast) var(--ease-out-back) forwards !important;
@@ -900,7 +762,6 @@ body {
         }
     }
     
-    /* Menu items stagger effect */
     [class*="menu_"] [class*="item_"],
     .item__088f7 {
         animation: menu-item-slide var(--anim-fast) var(--ease-out-expo) forwards;
@@ -918,9 +779,7 @@ body {
         }
     }
     
-    /* ═══════════════════════════════════════════════════════════════
-       POPOUTS & LAYERS - Directional Slide
-       ═══════════════════════════════════════════════════════════════ */
+    /* popouts */
     [class*="layer_"],
     [class*="popout_"],
     .popout_c83a44 {
@@ -938,7 +797,6 @@ body {
         }
     }
     
-    /* User popout special animation */
     .outer_c0bea0 {
         animation: user-popout var(--anim-normal) var(--ease-out-back) forwards !important;
     }
@@ -956,9 +814,7 @@ body {
         }
     }
     
-    /* ═══════════════════════════════════════════════════════════════
-       TOOLTIPS - Snappy with subtle bounce
-       ═══════════════════════════════════════════════════════════════ */
+    /* tooltips */
     [class*="tooltip_"],
     .tooltip__5c816 {
         animation: tooltip-pop 0.12s var(--ease-out-back) forwards !important;
@@ -975,9 +831,7 @@ body {
         }
     }
     
-    /* ═══════════════════════════════════════════════════════════════
-       MESSAGES - Smooth Appear with Subtle Slide
-       ═══════════════════════════════════════════════════════════════ */
+    /* messages */
     .message__5126c {
         animation: message-appear var(--anim-fast) var(--ease-out-expo) forwards;
     }
@@ -993,14 +847,11 @@ body {
         }
     }
     
-    /* Message hover - smooth background */
     [class*="message_"]:not([class*="mentioned"]) {
         transition: background-color var(--anim-fast) ease;
     }
     
-    /* ═══════════════════════════════════════════════════════════════
-       REACTIONS - Bouncy Pop
-       ═══════════════════════════════════════════════════════════════ */
+    /* reactions */
     [class*="reaction_"] {
         transition: background-color var(--anim-fast) ease, 
                     border-color var(--anim-fast) ease,
@@ -1014,7 +865,7 @@ body {
         transform: scale(0.92);
     }
     
-    /* New reaction animation */
+    /* new reaction */
     .reaction__23977.reactionMe__23977 {
         animation: reaction-add 0.3s var(--ease-out-back) forwards;
     }
@@ -1033,9 +884,7 @@ body {
         }
     }
     
-    /* ═══════════════════════════════════════════════════════════════
-       TYPING INDICATOR - Smooth Pulse
-       ═══════════════════════════════════════════════════════════════ */
+    /* typing indicator */
     .typing_b88801 {
         animation: typing-appear var(--anim-fast) var(--ease-out-expo) forwards;
     }
@@ -1051,9 +900,7 @@ body {
         }
     }
     
-    /* ═══════════════════════════════════════════════════════════════
-       UNREAD PILL & NOTIFICATIONS - Attention-grabbing
-       ═══════════════════════════════════════════════════════════════ */
+    /* unread bar */
     .newMessagesBar__0f481 {
         animation: unread-slide var(--anim-normal) var(--ease-out-back) forwards;
     }
@@ -1069,27 +916,19 @@ body {
         }
     }
     
-    /* Notification badge pulse */
+    /* notification badge */
     [class*="numberBadge_"] {
         animation: badge-pulse 0.3s var(--ease-out-back) forwards;
     }
     
     @keyframes badge-pulse {
-        0% {
-            transform: scale(0);
-        }
-        70% {
-            transform: scale(1.15);
-        }
-        100% {
-            transform: scale(1);
-        }
+        0% { transform: scale(0); }
+        70% { transform: scale(1.15); }
+        100% { transform: scale(1); }
     }
 
     .visual-refresh {
-        /* ═══════════════════════════════════════════════════════════════
-           LIST HOVER - Smooth Slide
-           ═══════════════════════════════════════════════════════════════ */
+        /* list hover */
         .wrapper__2ea32 .link__2ea32,
         .container__91a9d,
         .channel__972a0,
@@ -1120,9 +959,7 @@ body {
             box-shadow: 0 0 8px currentColor;
         }
 
-        /* ═══════════════════════════════════════════════════════════════
-           BUTTONS - Responsive Press
-           ═══════════════════════════════════════════════════════════════ */
+        /* buttons */
         button:not(.channelTextArea_f75fb0 button), 
         [type="button"],
         [class*="button_"]:not(.channelTextArea_f75fb0 [class*="button"]), 
@@ -1153,9 +990,7 @@ body {
             box-shadow: none;
         }
 
-        /* ═══════════════════════════════════════════════════════════════
-           INPUTS - Elegant Focus
-           ═══════════════════════════════════════════════════════════════ */
+        /* inputs */
         input, textarea, [class*="input_"], [class*="textArea_"] {
             transition: border-color var(--anim-fast) ease, 
                         box-shadow var(--anim-normal) var(--ease-out-expo);
@@ -1165,9 +1000,7 @@ body {
                         0 0 20px hsla(280, 50%, 60%, 0.1);
         }
 
-        /* ═══════════════════════════════════════════════════════════════
-           AVATARS - Subtle Glow
-           ═══════════════════════════════════════════════════════════════ */
+        /* avatars */
         [class*="avatar_"] {
             transition: filter var(--anim-fast) ease,
                         box-shadow var(--anim-fast) ease;
@@ -1177,9 +1010,7 @@ body {
             box-shadow: 0 0 12px hsla(280, 50%, 60%, 0.25);
         }
 
-        /* ═══════════════════════════════════════════════════════════════
-           SERVER ICONS - Glow effect on hover
-           ═══════════════════════════════════════════════════════════════ */
+        /* server icons */
         .wrapper__6e9f8 {
             transition: filter var(--anim-fast) ease, 
                         box-shadow var(--anim-normal) var(--ease-out-expo);
@@ -1193,14 +1024,11 @@ body {
             filter: brightness(0.95);
             box-shadow: 0 0 8px hsla(280, 50%, 55%, 0.25);
         }
-        /* Selected server glow */
         .wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8 {
             box-shadow: 0 0 24px hsla(280, 60%, 60%, 0.5);
         }
 
-        /* ═══════════════════════════════════════════════════════════════
-           CHANNEL LIST - Smooth interactions
-           ═══════════════════════════════════════════════════════════════ */
+        /* channel list */
         .containerDefault__2637a,
         .containerDragAfter__2637a,
         .containerDragBefore__2637a {
@@ -1210,7 +1038,6 @@ body {
             margin: 1px 8px;
         }
         
-        /* Voice channel users */
         .voiceUser__2637a {
             transition: background-color var(--anim-fast) ease,
                         transform var(--anim-fast) ease;
@@ -1220,9 +1047,7 @@ body {
             background-color: hsla(280, 25%, 50%, 0.1);
         }
 
-        /* ═══════════════════════════════════════════════════════════════
-           EMBEDS & CARDS - Lift Effect
-           ═══════════════════════════════════════════════════════════════ */
+        /* embeds/cards */
         [class*="embed_"], [class*="card_"], [class*="attachment_"] {
             transition: transform var(--anim-fast) var(--ease-out-expo), 
                         box-shadow var(--anim-normal) ease;
@@ -1233,37 +1058,26 @@ body {
                         0 0 0 1px hsla(280, 30%, 50%, 0.1);
         }
 
-        /* ═══════════════════════════════════════════════════════════════
-           ICONS - Color Transition
-           ═══════════════════════════════════════════════════════════════ */
+        /* icons */
         [class*="icon_"], svg {
-            transition: color 0.1s ease, 
-                        fill 0.1s ease,
-                        filter 0.1s ease;
+            transition: color 0.1s ease, fill 0.1s ease, filter 0.1s ease;
         }
 
-        /* ═══════════════════════════════════════════════════════════════
-           LINKS - Underline Animation
-           ═══════════════════════════════════════════════════════════════ */
+        /* links */
         a, [class*="anchor_"] {
             transition: color var(--anim-fast) ease;
         }
 
-        /* ═══════════════════════════════════════════════════════════════
-           BADGES - Pop In
-           ═══════════════════════════════════════════════════════════════ */
+        /* badges */
         [class*="badge_"], [class*="numberBadge_"] {
-            transition: filter 0.1s ease,
-                        transform 0.1s var(--ease-out-back);
+            transition: filter 0.1s ease, transform 0.1s var(--ease-out-back);
         }
         [class*="badge_"]:hover, [class*="numberBadge_"]:hover {
             filter: brightness(1.15);
         }
     }
     
-    /* ═══════════════════════════════════════════════════════════════
-       SETTINGS PAGE TRANSITIONS
-       ═══════════════════════════════════════════════════════════════ */
+    /* settings page */
     .contentRegion__23e6b {
         animation: settings-slide var(--anim-normal) var(--ease-out-expo) forwards;
     }
@@ -1279,25 +1093,17 @@ body {
         }
     }
     
-    /* ═══════════════════════════════════════════════════════════════
-       CHANNEL/SERVER SWITCH - Smooth Content Transition
-       ═══════════════════════════════════════════════════════════════ */
+    /* chat transition */
     .messagesWrapper__36d07 {
         animation: chat-fade var(--anim-fast) var(--ease-out-expo) forwards;
     }
     
     @keyframes chat-fade {
-        from {
-            opacity: 0.5;
-        }
-        to {
-            opacity: 1;
-        }
+        from { opacity: 0.5; }
+        to { opacity: 1; }
     }
     
-    /* ═══════════════════════════════════════════════════════════════
-       IMAGE VIEWER - Cinematic Open
-       ═══════════════════════════════════════════════════════════════ */
+    /* image viewer */
     .modal__4fdd4 {
         animation: image-modal var(--anim-slow) var(--ease-out-expo) forwards !important;
     }
@@ -1316,7 +1122,6 @@ body {
     }
 }
 
-/* background-image.css */
 body {
     --background-image-url: url('');
 }
@@ -1335,7 +1140,6 @@ body {
     }
 }
 
-/* chatbar.css */
 body {
     --chatbar-height: 48px;
     --custom-channel-textarea-text-area-height: var(--chatbar-height);
@@ -1473,7 +1277,6 @@ body {
     }
 }
 
-/* colors.css */
 @property --colors {
     syntax: 'off | on';
     inherits: false;
@@ -2277,7 +2080,6 @@ body {
     }
 }
 
-/* dms-button.css */
 body {
     --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
     --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
@@ -2458,7 +2260,6 @@ body {
     }
 }
 
-/* top-bar.css */
 body {
     --top-bar-height: 32px;
     --custom-app-top-bar-height: var(--top-bar-height);
@@ -2678,7 +2479,6 @@ body {
     }
 }
 
-/* transparency-blur.css */
 @property --panel-blur {
     syntax: 'off | on';
     inherits: false;
@@ -2741,7 +2541,6 @@ body {
     }
 }
 
-/* user-panel.css */
 @property --small-user-panel {
     syntax: 'off | on';
     inherits: false;
@@ -2818,7 +2617,6 @@ body {
     }
 }
 
-/* window-controls.css */
 body {
     --window-control-size: 13px;
 }
