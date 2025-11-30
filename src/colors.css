@@ -5,49 +5,49 @@
 }
 
 :root {
-    /* text colors - enhanced contrast and readability */
-    --text-0: var(--bg-4); /* text on colored elements */
-    --text-1: hsl(280, 20%, 98%); /* bright white with subtle lillac */
-    --text-2: hsl(280, 15%, 85%); /* headings - softer */
-    --text-3: hsl(280, 10%, 75%); /* normal text - high readability */
-    --text-4: hsl(280, 8%, 55%); /* icon buttons and channels */
-    --text-5: hsl(280, 6%, 42%); /* muted elements and timestamps */
+    /* text */
+    --text-0: var(--bg-4);
+    --text-1: hsl(280, 20%, 98%);
+    --text-2: hsl(280, 15%, 85%);
+    --text-3: hsl(280, 10%, 75%);
+    --text-4: hsl(280, 8%, 55%);
+    --text-5: hsl(280, 6%, 42%);
 
-    /* background colors - clean grey with hint of purple */
-    --bg-1: hsl(260, 8%, 22%); /* dark buttons when clicked */
-    --bg-2: hsl(260, 7%, 17%); /* dark buttons */
-    --bg-3: hsl(260, 6%, 13%); /* spacing, secondary elements */
-    --bg-4: hsl(260, 5%, 9%); /* main background - deeper */
-    --hover: hsla(280, 30%, 65%, 0.1); /* hover state */
-    --active: hsla(280, 30%, 65%, 0.18); /* active/selected state */
-    --active-2: hsla(280, 30%, 65%, 0.25); /* extra active state */
-    --message-hover: hsla(260, 20%, 55%, 0.06); /* message hover - subtle */
+    /* backgrounds */
+    --bg-1: hsl(260, 8%, 22%);
+    --bg-2: hsl(260, 7%, 17%);
+    --bg-3: hsl(260, 6%, 13%);
+    --bg-4: hsl(260, 5%, 9%);
+    --hover: hsla(280, 30%, 65%, 0.1);
+    --active: hsla(280, 30%, 65%, 0.18);
+    --active-2: hsla(280, 30%, 65%, 0.25);
+    --message-hover: hsla(260, 20%, 55%, 0.06);
 
-    /* accent colors */
-    --accent-1: var(--purple-1); /* links and accent text */
-    --accent-2: var(--purple-2); /* small accent elements */
-    --accent-3: var(--purple-3); /* accent buttons */
-    --accent-4: var(--purple-4); /* accent buttons hovered */
-    --accent-5: var(--purple-5); /* accent buttons clicked */
-    --accent-new: var(--purple-2); /* replaces red for mute/deafen */
+    /* accents */
+    --accent-1: var(--purple-1);
+    --accent-2: var(--purple-2);
+    --accent-3: var(--purple-3);
+    --accent-4: var(--purple-4);
+    --accent-5: var(--purple-5);
+    --accent-new: var(--purple-2);
     --mention: linear-gradient(to right, color-mix(in hsl, var(--purple-2), transparent 88%) 40%, transparent);
     --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--purple-2), transparent 92%) 40%, transparent);
     --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 92%) 40%, transparent);
     --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent);
 
-    /* status indicator colors */
+    /* status */
     --online: var(--green-2);
     --dnd: var(--red-2);
     --idle: var(--yellow-2);
     --streaming: var(--purple-2);
     --offline: var(--text-4);
 
-    /* border colors - refined */
+    /* borders */
     --border-light: hsla(280, 25%, 65%, 0.06);
     --border: hsla(280, 25%, 65%, 0.12);
     --button-border: hsla(280, 30%, 80%, 0.1);
 
-    /* base colors - harmonized palette */
+    /* base palette */
     --red-1: oklch(78% 0.13 12);
     --red-2: oklch(68% 0.15 12);
     --red-3: oklch(60% 0.15 12);
@@ -72,7 +72,7 @@
     --yellow-4: oklch(62% 0.11 85);
     --yellow-5: oklch(54% 0.09 85);
 
-    /* purple/lillac - refined and elegant */
+    /* purple/lillac */
     --purple-1: oklch(84% 0.11 290);
     --purple-2: oklch(72% 0.14 290);
     --purple-3: oklch(62% 0.16 290);

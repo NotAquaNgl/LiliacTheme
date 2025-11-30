@@ -1145,11 +1145,8 @@ body {
     --custom-channel-textarea-text-area-height: var(--chatbar-height);
 }
 
-/* ═══════════════════════════════════════════════════════════════
-   SEPARATED CHATBAR - Enhanced UX
-   ═══════════════════════════════════════════════════════════════ */
+/* separated chatbar */
 .visual-refresh {
-    /* Attach button (plus) - balanced spacing */
     .attachWrapper__0923f {
         padding: 0 4px 0 8px;
         display: flex;
@@ -1157,14 +1154,12 @@ body {
         justify-content: center;
     }
 
-    /* Remove default chat content styling */
     .chatContent_f75fb0 {
         background: none !important;
         border: none !important;
         border-radius: 0 !important;
     }
     
-    /* Messages container - clean panel */
     .messagesWrapper__36d07 {
         background-color: var(--background-base-lower) !important;
         border-radius: var(--radius-lg) !important;
@@ -1180,7 +1175,6 @@ body {
         height: calc(26px + var(--space-xs)) !important;
     }
     
-    /* Form layout */
     .form_f75fb0 {
         display: flex;
         flex-direction: column;
@@ -1188,7 +1182,6 @@ body {
         margin-top: 0 !important;
     }
     
-    /* Typing indicator - positioned nicely */
     .typing_b88801 {
         position: absolute;
         order: -1;
@@ -1199,60 +1192,50 @@ body {
         height: 26px;
     }
     
-    /* Gap between messages and chatbar */
     .channelBottomBarArea_f75fb0 {
         margin-top: var(--gap) !important;
     }
     
-    /* ═══════════════════════════════════════════════════════════════
-       TEXT INPUT - Polished interactions
-       ═══════════════════════════════════════════════════════════════ */
+    /* text input */
     .channelTextArea_f75fb0 {
         margin: 0 !important;
         background-color: var(--background-base-lower) !important;
         border-radius: var(--radius-lg) !important;
         border: 1px solid var(--border-subtle) !important;
-        transition: border-color 0.15s ease,
-                    box-shadow 0.15s ease;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
     }
     .channelTextArea_f75fb0:hover {
         border-color: hsla(280, 30%, 60%, 0.35) !important;
     }
     .channelTextArea_f75fb0:focus-within {
         border-color: hsla(280, 35%, 65%, 0.5) !important;
-        box-shadow: 0 0 0 2px hsla(280, 30%, 60%, 0.1),
-                    0 2px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 2px hsla(280, 30%, 60%, 0.1), 0 2px 8px rgba(0, 0, 0, 0.1);
     }
     
     .stackedBars__74017 {
         background: none !important;
     }
     
-    /* Inner wrapper styling */
     .wrapper__44df5 {
         margin: var(--gap) 0 0 0 !important;
         height: var(--chatbar-height);
         padding: 0 !important;
         border-radius: var(--radius-lg) !important;
         border: 1px solid var(--border-subtle) !important;
-        transition: border-color 0.15s ease,
-                    box-shadow 0.15s ease;
+        transition: border-color 0.15s ease, box-shadow 0.15s ease;
     }
     .wrapper__44df5:hover {
         border-color: hsla(280, 30%, 60%, 0.35) !important;
     }
     .wrapper__44df5:focus-within {
         border-color: hsla(280, 35%, 65%, 0.5) !important;
-        box-shadow: 0 0 0 2px hsla(280, 30%, 60%, 0.1),
-                    0 2px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 2px hsla(280, 30%, 60%, 0.1), 0 2px 8px rgba(0, 0, 0, 0.1);
     }
     
-    /* Chatbar buttons - color transitions only (no scale to prevent overflow) */
+    /* chatbar buttons */
     .channelTextArea_f75fb0 button,
     .channelTextArea_f75fb0 [class*="button"] {
-        transition: color 0.1s ease,
-                    background-color 0.1s ease,
-                    opacity 0.1s ease;
+        transition: color 0.1s ease, background-color 0.1s ease, opacity 0.1s ease;
     }
     .channelTextArea_f75fb0 button:hover,
     .channelTextArea_f75fb0 [class*="button"]:hover {
@@ -1264,10 +1247,8 @@ body {
         opacity: 0.7;
     }
     
-    /* Send button special styling - color only */
     .sendButton__7ec1b {
-        transition: background-color 0.15s ease,
-                    opacity 0.1s ease !important;
+        transition: background-color 0.15s ease, opacity 0.1s ease !important;
     }
     .sendButton__7ec1b:hover {
         filter: brightness(1.15) !important;
@@ -1284,49 +1265,49 @@ body {
 }
 
 :root {
-    /* text colors - enhanced contrast and readability */
-    --text-0: var(--bg-4); /* text on colored elements */
-    --text-1: hsl(280, 20%, 98%); /* bright white with subtle lillac */
-    --text-2: hsl(280, 15%, 85%); /* headings - softer */
-    --text-3: hsl(280, 10%, 75%); /* normal text - high readability */
-    --text-4: hsl(280, 8%, 55%); /* icon buttons and channels */
-    --text-5: hsl(280, 6%, 42%); /* muted elements and timestamps */
+    /* text */
+    --text-0: var(--bg-4);
+    --text-1: hsl(280, 20%, 98%);
+    --text-2: hsl(280, 15%, 85%);
+    --text-3: hsl(280, 10%, 75%);
+    --text-4: hsl(280, 8%, 55%);
+    --text-5: hsl(280, 6%, 42%);
 
-    /* background colors - clean grey with hint of purple */
-    --bg-1: hsl(260, 8%, 22%); /* dark buttons when clicked */
-    --bg-2: hsl(260, 7%, 17%); /* dark buttons */
-    --bg-3: hsl(260, 6%, 13%); /* spacing, secondary elements */
-    --bg-4: hsl(260, 5%, 9%); /* main background - deeper */
-    --hover: hsla(280, 30%, 65%, 0.1); /* hover state */
-    --active: hsla(280, 30%, 65%, 0.18); /* active/selected state */
-    --active-2: hsla(280, 30%, 65%, 0.25); /* extra active state */
-    --message-hover: hsla(260, 20%, 55%, 0.06); /* message hover - subtle */
+    /* backgrounds */
+    --bg-1: hsl(260, 8%, 22%);
+    --bg-2: hsl(260, 7%, 17%);
+    --bg-3: hsl(260, 6%, 13%);
+    --bg-4: hsl(260, 5%, 9%);
+    --hover: hsla(280, 30%, 65%, 0.1);
+    --active: hsla(280, 30%, 65%, 0.18);
+    --active-2: hsla(280, 30%, 65%, 0.25);
+    --message-hover: hsla(260, 20%, 55%, 0.06);
 
-    /* accent colors */
-    --accent-1: var(--purple-1); /* links and accent text */
-    --accent-2: var(--purple-2); /* small accent elements */
-    --accent-3: var(--purple-3); /* accent buttons */
-    --accent-4: var(--purple-4); /* accent buttons hovered */
-    --accent-5: var(--purple-5); /* accent buttons clicked */
-    --accent-new: var(--purple-2); /* replaces red for mute/deafen */
+    /* accents */
+    --accent-1: var(--purple-1);
+    --accent-2: var(--purple-2);
+    --accent-3: var(--purple-3);
+    --accent-4: var(--purple-4);
+    --accent-5: var(--purple-5);
+    --accent-new: var(--purple-2);
     --mention: linear-gradient(to right, color-mix(in hsl, var(--purple-2), transparent 88%) 40%, transparent);
     --mention-hover: linear-gradient(to right, color-mix(in hsl, var(--purple-2), transparent 92%) 40%, transparent);
     --reply: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 92%) 40%, transparent);
     --reply-hover: linear-gradient(to right, color-mix(in hsl, var(--text-3), transparent 95%) 40%, transparent);
 
-    /* status indicator colors */
+    /* status */
     --online: var(--green-2);
     --dnd: var(--red-2);
     --idle: var(--yellow-2);
     --streaming: var(--purple-2);
     --offline: var(--text-4);
 
-    /* border colors - refined */
+    /* borders */
     --border-light: hsla(280, 25%, 65%, 0.06);
     --border: hsla(280, 25%, 65%, 0.12);
     --button-border: hsla(280, 30%, 80%, 0.1);
 
-    /* base colors - harmonized palette */
+    /* base palette */
     --red-1: oklch(78% 0.13 12);
     --red-2: oklch(68% 0.15 12);
     --red-3: oklch(60% 0.15 12);
@@ -1351,7 +1332,7 @@ body {
     --yellow-4: oklch(62% 0.11 85);
     --yellow-5: oklch(54% 0.09 85);
 
-    /* purple/lillac - refined and elegant */
+    /* purple/lillac */
     --purple-1: oklch(84% 0.11 290);
     --purple-2: oklch(72% 0.14 290);
     --purple-3: oklch(62% 0.16 290);
@@ -2081,13 +2062,13 @@ body {
 }
 
 body {
-    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg'); /* icon svg url. MUST BE A SVG. */
-    --dms-icon-svg-size: 90%; /* size of the svg (css mask-size property) */
-    --dms-icon-color-before: var(--icon-secondary); /* normal icon color */
-    --dms-icon-color-after: var(--white); /* icon color when button is hovered/selected */
-    --dms-background-image-url: url(''); /* url of the background image */
-    --dms-background-image-size: cover; /* size of the background image (css background-size property) */
-    --dms-background-color: linear-gradient(135deg, var(--purple-3), var(--purple-2)); /* fixed color/gradient (css background property) */
+    --dms-icon-svg-url: url('https://refact0r.github.io/midnight-discord/assets/Font_Awesome_5_solid_moon.svg');
+    --dms-icon-svg-size: 90%;
+    --dms-icon-color-before: var(--icon-secondary);
+    --dms-icon-color-after: var(--white);
+    --dms-background-image-url: url('');
+    --dms-background-image-size: cover;
+    --dms-background-color: linear-gradient(135deg, var(--purple-3), var(--purple-2));
 }
 
 @property --custom-dms-icon {
@@ -2124,12 +2105,9 @@ body {
         mask-size: var(--dms-icon-svg-size);
         mask-position: center;
         mask-repeat: no-repeat;
-        transition: background-color 0.2s ease-out,
-                    transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1),
-                    filter 0.3s ease;
+        transition: background-color 0.2s ease-out, transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), filter 0.3s ease;
     }
     
-    /* Hover - subtle glow and tilt */
     .wrapper__6e9f8[data-list-item-id='guildsnav___home']:hover > .childWrapper__6e9f8::before,
     .wrapper__6e9f8[data-list-item-id='guildsnav___home'].selected__6e9f8 > .childWrapper__6e9f8::before {
         background: var(--dms-icon-color-after);
@@ -2137,16 +2115,12 @@ body {
         filter: drop-shadow(0 0 6px hsla(280, 60%, 70%, 0.5));
     }
     
-    /* ═══════════════════════════════════════════════════════════════
-       SECRET LONG-PRESS ANIMATION - Moon Eclipse Effect
-       Hold for 0.8s to trigger the secret animation!
-       ═══════════════════════════════════════════════════════════════ */
+    /* long press easter egg */
     .wrapper__6e9f8[data-list-item-id='guildsnav___home']:active > .childWrapper__6e9f8::before {
         animation: moon-eclipse 2s ease-in-out forwards;
-        animation-delay: 0.8s; /* Secret triggers after holding 0.8s */
+        animation-delay: 0.8s;
     }
     
-    /* Eclipse ring effect */
     .wrapper__6e9f8[data-list-item-id='guildsnav___home'] > .childWrapper__6e9f8::after {
         content: '';
         position: absolute;
@@ -2186,8 +2160,7 @@ body {
         }
         70% {
             transform: rotate(360deg) scale(1.1);
-            filter: drop-shadow(0 0 20px hsla(280, 80%, 70%, 1))
-                    drop-shadow(0 0 40px hsla(280, 70%, 60%, 0.6));
+            filter: drop-shadow(0 0 20px hsla(280, 80%, 70%, 1)) drop-shadow(0 0 40px hsla(280, 70%, 60%, 0.6));
             background: var(--white);
         }
         85% {
@@ -2202,33 +2175,11 @@ body {
     }
     
     @keyframes eclipse-ring {
-        0% {
-            opacity: 0;
-            transform: scale(0.5);
-            border-color: transparent;
-        }
-        30% {
-            opacity: 1;
-            transform: scale(1);
-            border-color: hsla(280, 60%, 60%, 0.8);
-        }
-        50% {
-            opacity: 1;
-            transform: scale(1.3);
-            border-color: hsla(280, 70%, 70%, 1);
-            box-shadow: 0 0 15px hsla(280, 70%, 60%, 0.5),
-                        inset 0 0 10px hsla(280, 70%, 60%, 0.3);
-        }
-        70% {
-            opacity: 0.8;
-            transform: scale(1.5);
-            border-color: hsla(280, 60%, 70%, 0.6);
-        }
-        100% {
-            opacity: 0;
-            transform: scale(2);
-            border-color: transparent;
-        }
+        0% { opacity: 0; transform: scale(0.5); border-color: transparent; }
+        30% { opacity: 1; transform: scale(1); border-color: hsla(280, 60%, 60%, 0.8); }
+        50% { opacity: 1; transform: scale(1.3); border-color: hsla(280, 70%, 70%, 1); box-shadow: 0 0 15px hsla(280, 70%, 60%, 0.5), inset 0 0 10px hsla(280, 70%, 60%, 0.3); }
+        70% { opacity: 0.8; transform: scale(1.5); border-color: hsla(280, 60%, 70%, 0.6); }
+        100% { opacity: 0; transform: scale(2); border-color: transparent; }
     }
 }
 
@@ -2549,29 +2500,23 @@ body {
 
 @container body style(--small-user-panel: on) {
     .visual-refresh {
-        .panels__5e434 /* user panel */ {
+        .panels__5e434 {
             right: 0;
             left: unset;
             width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width));
         }
-        .guilds__5e434 /* server list */ {
+        .guilds__5e434 {
             margin-bottom: 0;
         }
     }
 }
 
-/* ═══════════════════════════════════════════════════════════════
-   USER PANEL ENHANCEMENTS - Polished and modern
-   ═══════════════════════════════════════════════════════════════ */
+/* user panel */
 .visual-refresh {
-    /* User panel container - subtle gradient */
     .panels__5e434 {
-        background: linear-gradient(180deg,
-            var(--background-base-lower) 0%,
-            hsla(280, 12%, 10%, 1) 100%) !important;
+        background: linear-gradient(180deg, var(--background-base-lower), hsla(280, 12%, 10%, 1)) !important;
     }
     
-    /* User area - the avatar and name section */
     .container_f14944 {
         border-radius: var(--radius-md);
         margin: 2px 8px;
@@ -2582,7 +2527,6 @@ body {
         background-color: hsla(280, 25%, 50%, 0.1);
     }
     
-    /* Avatar in user panel - subtle glow on hover */
     .panels__5e434 .avatar__8fca5 {
         transition: filter 0.2s ease, box-shadow 0.2s ease;
     }
@@ -2591,7 +2535,6 @@ body {
         box-shadow: 0 0 12px hsla(280, 50%, 60%, 0.3);
     }
     
-    /* Username styling */
     .panels__5e434 .nameTag__8fca5 {
         transition: color 0.15s ease;
     }
@@ -2599,18 +2542,15 @@ body {
         color: var(--text-1);
     }
     
-    /* Control buttons (mute, deafen, settings) */
     .panels__5e434 .button_f14944 {
         border-radius: var(--radius-sm);
-        transition: background-color 0.15s ease, 
-                    color 0.15s ease;
+        transition: background-color 0.15s ease, color 0.15s ease;
     }
     .panels__5e434 .button_f14944:hover {
         background-color: hsla(280, 30%, 55%, 0.2);
         color: var(--purple-2);
     }
     
-    /* Active/enabled state for mute/deafen */
     .panels__5e434 .button_f14944.enabled_f14944 {
         background-color: hsla(280, 40%, 50%, 0.25);
         color: var(--purple-1);
